@@ -1,16 +1,117 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #0099c0;
+  --color-dark: #004e80;
+  --color-light: #ffffff;
+}
+
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  overflow-x: hidden;
+  margin-left: -15px;
+}
+
+button,
+.btn-default {
+  cursor: pointer;
+  border: none;
+  transition: 0.1s;
+  background: var(--color-light);
+  color: var(--color-dark);
+  padding: 0.8rem 1.6rem;
+}
+
+button:hover {
+  background: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-light), 0 0 0 4px var(--color-primary);
+  outline: none;
+}
+
+button:active {
+  box-shadow: 0 0 0 3px var(--color), 0 0 0 4px var(--color-primary);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.btn-default {
+  border-radius: 10rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+.default {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #c23;
+}
+
+.default .section-title,
+.default .section-desc {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.default .section-title {
+  font-size: 20px;
+}
+
+.default .section-desc {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.default .section-body {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.default.light {
+  background-color: var(--color-light);
+}
+
+.default.light .section-title,
+.default.light .section-body {
+  color: #000;
+}
+
+.default.dark {
+  background-color: var(--color-dark);
+}
+
+.default.dark .section-title,
+.default.dark .section-body {
+  color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+}
+
+@media screen and (min-width: 1200px) {
 }

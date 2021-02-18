@@ -1,0 +1,27 @@
+.section-plus{
+    display: flex;
+}
+
+.section-plus--right{
+    flex: 1;
+    text-align: right;
+}
+
+.section-plus--right h2{
+   text-align: right;
+}
+
+.section-plus--left p{
+    width: 500px;
+    text-align: center;
+}
+
+.section-plus--right{
+    font-size: 14px;
+    line-height: 25px;    
+}
+
+.section-plus--left img{
+    width: 480px;
+    
+}
